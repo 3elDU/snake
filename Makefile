@@ -1,5 +1,4 @@
 CC = gcc
-CFLAGS = -O2 -pipe
 
 LDFLAGS= -lncurses -ltinfo
 

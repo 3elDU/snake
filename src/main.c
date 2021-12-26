@@ -107,10 +107,10 @@ void play_game() {
 
 		int key = getch();
 
-		if (key == 'a' || key == 'A') 		{ dir_y = 0;  dir_x = -1; }
-		else if (key == 's' || key == 'S')	{ dir_y = 1;  dir_x = 0;  }
-		else if (key == 'w' || key == 'W')	{ dir_y = -1; dir_x = 0; }
-		else if (key == 'd' || key == 'D') 	{ dir_x = 1;  dir_y = 0; }
+		if ((key == 'a' || key == 'A')		&& dir_x != 1) 		{ dir_y = 0;  dir_x = -1; }
+		else if ((key == 's' || key == 'S')	&& dir_y != -1)		{ dir_y = 1;  dir_x = 0;  }
+		else if ((key == 'w' || key == 'W')	&& dir_y != 1)		{ dir_y = -1; dir_x = 0; }
+		else if ((key == 'd' || key == 'D')	&& dir_x != -1) 	{ dir_x = 1;  dir_y = 0; }
 
 		else if (key == 'q' || key == 'Q') running = FALSE;
 

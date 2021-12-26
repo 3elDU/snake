@@ -3,7 +3,7 @@ CC = gcc
 LDFLAGS= -lncurses -ltinfo
 
 SOURCES = src/*
-OBJECTS = $(SOURCES:.c=.0)
+OBJECTS = $(SOURCES:.c=.o)
 TARGET = snake-game
 
 $(TARGET) : $(OBJECTS)
